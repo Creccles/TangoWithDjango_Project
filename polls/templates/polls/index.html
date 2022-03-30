@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Index</title>
+    </head>
+
+<body>
+
+<li>
+    <a href="{% url 'polls:detail' question.id %}">{{question.question_text }}</a>
+</li>
+
+</body>
+
+</html>
