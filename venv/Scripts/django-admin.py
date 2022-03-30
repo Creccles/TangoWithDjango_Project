@@ -1,4 +1,4 @@
-#!c:\users\crecc\downloads\tangowithdjango-f5799a8bdcafd384a6ff5d1d2f43a9c7f6410922\tangowithdjango-f5799a8bdcafd384a6ff5d1d2f43a9c7f6410922\venv\scripts\python.exe
+#!C:\Users\crecc\Downloads\chap5\TangoWithDjango-c01330d87059345440bde544f5fa5e4798826897\venv\Scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":
