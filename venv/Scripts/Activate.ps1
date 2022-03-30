@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\crecc\Downloads\chap3\TangoWithDjango-28e1f45f93fc8806c2799221100d4d1aa42e1541\venv"
+$env:VIRTUAL_ENV="C:\Users\crecc\Downloads\TangoWithDjango-f5799a8bdcafd384a6ff5d1d2f43a9c7f6410922\TangoWithDjango-f5799a8bdcafd384a6ff5d1d2f43a9c7f6410922\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name

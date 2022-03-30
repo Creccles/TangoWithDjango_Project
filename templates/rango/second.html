@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>Rango</title>
+    </head>
+
+    <body>
+        <h1>Rango's Second</h1>
+        <div>
+            A legend always...<br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <a href="/rango/">Index</a>
+            <a href="/rango/about/">About</a><br />
+            <img src="{{ MEDIA_URL }}rangofett.jpg"
+                 alt="Picture of a legend."/>
+        </div>
+    </body>
+
+</html>
