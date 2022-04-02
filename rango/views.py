@@ -18,7 +18,9 @@ def index(request):
     return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-    return render(request, 'rango/about.html')
+    print(request.method)
+    print(request.user)
+    return render(request, 'rango/about.html', {})
 
 def second(request):
     context_dict = {'boldmessage': 'Apple, Elephant, Pear, Dog, Orange!'}
