@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\crecc\Downloads\chap8\TangoWithDjango-c211360e595744b262888489c5c2d01ba4f39a40\venv
+set VIRTUAL_ENV=C:\Users\crecc\Downloads\chap9\TangoWithDjango-d5bdc3df5aa5d6bb638ae2ee3112634b04e68ed8\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

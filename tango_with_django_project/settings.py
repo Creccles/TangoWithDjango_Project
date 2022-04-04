@@ -21,6 +21,8 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+LOGIN_URL = 'rango:login'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -31,7 +33,6 @@ SECRET_KEY = 'django-insecure-5_o_q)l8a1o958o4bur_3@k_(s^j*m5p&og$ehk(-d%rl!3n72
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -98,6 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS': { 'min_length': 6, },
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -107,6 +109,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+PASSWORD_HASHERS = (
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
